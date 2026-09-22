@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おすすめYouTubeチャンネル</title>
+<style>
+  /* 古いiPad（iOS 9 / Safari 9）でも表示できるよう、grid・CSS変数を使わずflexboxのみで組んでいます */
+  * { -webkit-box-sizing: border-box; box-sizing: border-box; }
+  body { margin: 0; background: #f7f7f5; color: #1f1f1f;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    line-height: 1.7; -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header.wrap { padding-top: 48px; padding-bottom: 20px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  header p { margin: 0; color: #6b6b6b; }
+  .filters { margin-top: 20px; }
+  .filters button { -webkit-appearance: none; border: 1px solid #e0e0dc; background: #fff; color: #1f1f1f;
+    border-radius: 999px; padding: 6px 14px; margin: 0 6px 8px 0; font-size: 14px; font-family: inherit; cursor: pointer; }
+  .filters button.on { background: #1f1f1f; color: #fff; border-color: #1f1f1f; }
+  .list { display: -webkit-box; display: -webkit-flex; display: flex;
+    -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -8px; padding-bottom: 56px; }
+  .card { width: 33.333%; padding: 8px; display: -webkit-box; display: -webkit-flex; display: flex; }
+  .card.hide { display: none; }
+  .box { -webkit-flex: 1; flex: 1; background: #fff; border: 1px solid #e6e6e2; border-radius: 14px; padding: 20px;
+    display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; }
+  .head { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; }
+  .avatar { position: relative; width: 64px; height: 64px; border-radius: 50%; overflow: hidden;
+    background: #efeeea; -webkit-flex-shrink: 0; flex-shrink: 0; margin-right: 14px; text-align: center; }
+  .avatar span { line-height: 64px; font-size: 24px; font-weight: bold; color: #8a8a8a; }
+  .avatar img { position: absolute; top: 0; left: 0; width: 64px; height: 64px; }
+  .meta { -webkit-flex: 1; flex: 1; min-width: 0; }
+  .name { font-size: 17px; margin: 0; line-height: 1.4; }
+  .tag { display: inline-block; margin-top: 4px; font-size: 12px; color: #6b6b6b; background: #f1f0ec; border-radius: 6px; padding: 1px 8px; }
+  .desc { font-size: 15px; color: #555; margin-top: 12px; margin-bottom: 14px; -webkit-flex: 1; flex: 1; }
+  .btn { display: inline-block; -webkit-align-self: flex-start; align-self: flex-start; text-decoration: none; color: #fff;
+    background: #cc0000; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: bold; }
+  footer { text-align: center; color: #6b6b6b; font-size: 12px; padding: 0 16px 40px; }
+  @media (max-width: 900px) { .card { width: 50%; } }
+  @media (max-width: 600px) { .card { width: 100%; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>おすすめYouTubeチャンネル</h1>
+  <p>いつも見ているチャンネルを紹介します。気になるものがあればぜひ覗いてみてください。</p>
+  <div class="filters" id="filters">
+    <button type="button" class="on" data-tag="all">すべて</button>
+    <button type="button" data-tag="gadget">ガジェット・スマホ</button>
+    <button type="button" data-tag="tech">テック・キャリア</button>
+    <button type="button" data-tag="study">資格・学び</button>
+    <button type="button" data-tag="home">住まい・暮らし</button>
+    <button type="button" data-tag="ent">エンタメ・カルチャー</button>
+    <button type="button" data-tag="news">ニュース・政治</button>
+  </div>
+</header>
+<div class="wrap">
+<div class="list" id="list">
+  <div class="card" data-tag="gadget"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>ガ</span><img src="https://unavatar.io/youtube/UC-5ztjRXOCpOsJi0xMES52A?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">ガジェ丸 / iPhoneお得情報</h2>
+        <span class="tag">ガジェット・スマホ</span>
+      </div>
+    </div>
+    <p class="desc">本当にお得なiPhone・スマホ情報を中心に、Apple製品や家電、PC、ガジェットの役立つ情報を発信しています。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UC-5ztjRXOCpOsJi0xMES52A" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="gadget"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>ま</span><img src="https://unavatar.io/youtube/UC3ZyXaDaDyKcFff8l1fI8Og?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">まーラボ Lab.【格安SIMラボ】</h2>
+        <span class="tag">ガジェット・スマホ</span>
+      </div>
+    </div>
+    <p class="desc">格安SIMのレビューや一括1円端末の情報などを、ゆっくり動画で紹介。スマホ好きにおすすめのチャンネルです。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UC3ZyXaDaDyKcFff8l1fI8Og" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="gadget"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>あ</span><img src="https://unavatar.io/youtube/UCiUCX_DBkh0-tUr6S7ei1kA?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">あうあう家のガジェット</h2>
+        <span class="tag">ガジェット・スマホ</span>
+      </div>
+    </div>
+    <p class="desc">ガジェットをいかにコスパよく手に入れるかがテーマ。スマホ・PC・ゲーム関連のお得情報を追いかけています。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCiUCX_DBkh0-tUr6S7ei1kA" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="tech"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>T</span><img src="https://unavatar.io/youtube/UCISDrqLMNq3w9AZ4otdoRuA?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">TECH WORLD</h2>
+        <span class="tag">テック・キャリア</span>
+      </div>
+    </div>
+    <p class="desc">日本で働くソフトウェアエンジニアとしての日々やキャリアを発信するチャンネルです。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCISDrqLMNq3w9AZ4otdoRuA" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="tech"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>安</span><img src="https://unavatar.io/youtube/UCiMwbmcCSMORJ-85XWhStBw?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">安野貴博の自由研究</h2>
+        <span class="tag">テック・キャリア</span>
+      </div>
+    </div>
+    <p class="desc">AIエンジニア・起業家・SF作家の安野貴博さんが、自身の活動や考えを発信するチャンネルです。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCiMwbmcCSMORJ-85XWhStBw" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="study"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>ガ</span><img src="https://unavatar.io/youtube/UCWJEssGVTIpTwvAZNvd7ILw?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">ガミデンキちゃんねる</h2>
+        <span class="tag">資格・学び</span>
+      </div>
+    </div>
+    <p class="desc">元電気科講師による電気工事士の資格対策チャンネル。筆記・技能試験のポイントをわかりやすく解説しています。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCWJEssGVTIpTwvAZNvd7ILw" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="home"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>生</span><img src="https://unavatar.io/youtube/UCR5_QGoPom91psBKZ9YPrAQ?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">生活堂でかんたんリフォーム by ライフワン</h2>
+        <span class="tag">住まい・暮らし</span>
+      </div>
+    </div>
+    <p class="desc">トイレや給湯器、食洗機、ガスコンロなどの住宅設備を、リフォームのプロが選び方から交換方法まで本音で解説します。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCR5_QGoPom91psBKZ9YPrAQ" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="ent"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>有</span><img src="https://unavatar.io/youtube/UCmKlo3BXt60nzgk2r_JgvwQ?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">有隣堂しか知らない世界</h2>
+        <span class="tag">エンタメ・カルチャー</span>
+      </div>
+    </div>
+    <p class="desc">老舗書店・有隣堂のスタッフが、文房具や本など「有隣堂しか知らない」さまざまな世界を愛をこめて紹介します。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCmKlo3BXt60nzgk2r_JgvwQ" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="ent"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>マ</span><img src="https://unavatar.io/youtube/UCfpC7dDq-cFmaj5ILzZ-86g?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">マロン（漢）</h2>
+        <span class="tag">エンタメ・カルチャー</span>
+      </div>
+    </div>
+    <p class="desc">トイプードルのマロンの日常に、飼い主の実況をつけた動画を投稿している癒やし系チャンネルです。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCfpC7dDq-cFmaj5ILzZ-86g" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+  <div class="card" data-tag="news"><div class="box">
+    <div class="head">
+      <div class="avatar"><span>右</span><img src="https://unavatar.io/youtube/UCRkhnqY4vM-gRypgYSsGetA?fallback=false" alt="" onerror="this.style.display='none'"></div>
+      <div class="meta">
+        <h2 class="name">右派★右派　ずんだタイム</h2>
+        <span class="tag">ニュース・政治</span>
+      </div>
+    </div>
+    <p class="desc">日本の政治を右派の視点から考察するチャンネル。各政党の動きなどを解説しています。</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCRkhnqY4vM-gRypgYSsGetA" target="_blank" rel="noopener">チャンネルを見る</a>
+  </div></div>
+</div>
+</div>
+<footer>各チャンネルの説明は公式の概要欄をもとに要約しています。</footer>
+<script>
+(function () {
+  var filters = document.getElementById('filters');
+  var buttons = filters.getElementsByTagName('button');
+  var cards = document.getElementById('list').getElementsByClassName('card');
+  filters.addEventListener('click', function (ev) {
+    var b = ev.target;
+    if (b.tagName !== 'BUTTON') return;
+    var tag = b.getAttribute('data-tag');
+    var i;
+    for (i = 0; i < buttons.length; i++) buttons[i].className = (buttons[i] === b) ? 'on' : '';
+    for (i = 0; i < cards.length; i++) {
+      var show = tag === 'all' || cards[i].getAttribute('data-tag') === tag;
+      cards[i].className = show ? 'card' : 'card hide';
+    }
+  }, false);
+})();
+</script>
+</body>
+</html>
